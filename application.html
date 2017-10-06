@@ -5,20 +5,432 @@
     <title>PSU Application Form</title>
   </head>
   <body>
-    <div align="center">
-     <h4>ใบสมัครคัดเลือกพนักงาน ม.อ.</h4>
-   </div>
-   <form action="#" method="post">
-     <div align="center">
-       <label for="txtposition">ตำแหน่ง</label>
-       <input type="text" name="txtposition" />
-     </div>
-     <div>
-       <label for="txtorg">คณะหน่วยงานที่สมัคร</label>
-       <input type="text" name="txtorg" /><br />
-       <label for="txtsalary">เงินเดือนที่ต้องการ</label>
-       <input type="text" name="txtsalary" />
-     </div>
-   </form>
+    <small><p align = "right"><h10>แบบ พ.1/42</h10> </font></p>
+<p align = "right"><label for="fnum">เลขที่&nbsp;</label>
+<input type="int" number="fnum" id="fnum" /> </font></p></small>
+
+<center><img src = "psu.jpg" width="85" height="135"></center>
+<br />
+
+<center><table border="1" bordercolor="#000000">
+     <tr>
+            <td><center><br /><br />รูปถ่าย <br /> ขนาด 1 นิ้ว <br /><br /><br /> </center></td>
+     </tr>
+</table>
+<br />
+<form name="form1" method="post" action=" " enctype="multipart/form-data">
+  <label for="filUpload"></label>
+  <input type="file" name="filUpload" ><br>
+</form></center>
+    <font face="Tahoma">
+      <div align="center">
+        <h4>ใบสมัครคัดเลือกพนักงานมหาวิทยาลัยสงขลานครินทร์</h4>
+      </div>
+      <font size="3">
+        <Form action=" " method="post">
+          <center>
+            <label for="txtposition">ตำแหน่ง : </label>
+            <input type="text" name="txtposition"/>
+          </center>
+          <div>
+            <label for="txtorg">คณะ / หน่วยงานที่สมัคร : </label>
+            <input type="text" name="txtorg" />
+            <br><label for="txtsalary">เงินเดือนที่ต้องการ : </label>
+            <input type="text" name="txtsalary" /> บาท &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="work">ลักษณะงาน </label>
+            &nbsp;&nbsp;&nbsp;<input type="radio" name="work" /> Full Time &nbsp;&nbsp;<input type="radio" name="work" /> Part Time
+          </div>
+          <p><fieldset><legend> 1. ข้อมูลทั่วไป </legend>
+            <dd><small><label for="id"> เลขที่บัตรประชาชน : </label>
+            <input type="text" name="id"/>
+            <dd><label for="firstname"> ชื่อ : </label>
+            <input type="text" name="firstname"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <label for="lastname"> นามสกุล : </label>
+            <input type="text" name="lastname"/>
+            <br><dd><label for="sex">เพศ </label>
+            &nbsp;&nbsp;&nbsp;<input type="radio" name="sex" /> ชาย &nbsp;&nbsp;<input type="radio" name="sex" /> หญิง
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วัน/เดือน/ปีเกิด :
+            <label for="date"></label>
+              <select name="date" id="date">
+                <option value="31">31</option>
+                <option value="30">30</option>
+                <option value="29">29</option>
+                <option value="28">28</option>
+                <option value="27">27</option>
+                <option value="26">26</option>
+                <option value="25">25</option>
+                <option value="24">24</option>
+                <option value="23">23</option>
+                <option value="22">22</option>
+                <option value="21">21</option>
+                <option value="20">20</option>
+                <option value="19">19</option>
+                <option value="18">18</option>
+                <option value="17">17</option>
+                <option value="16">16</option>
+                <option value="15">15</option>
+                <option value="14">14</option>
+                <option value="13">13</option>
+                <option value="12">12</option>
+                <option value="11">11</option>
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1" selected="selected">1</option>
+              </select>
+            <label for="month"></label>
+              <select name="month" id="month">
+                <option value="DEC">ธันวาคม</option>
+                <option value="NOV">พฤศจิกายน</option>
+                <option value="OCT">ตุลาคม</option>
+                <option value="SEP">กันยายน</option>
+                <option value="AUG">สิงหาคม</option>
+                <option value="JUL">กรกฎาคม</option>
+                <option value="JUN">มิถุนายน</option>
+                <option value="MAY">พฤษภาคม</option>
+                <option value="APR">เมษายน</option>
+                <option value="MAR">มีนาคม</option>
+                <option value="FEB">กุมภาพันธ์</option>
+                <option value="JAN" selected="selected">มกราคม</option>
+              </select>
+            <label for="year"></label>
+              <select name="year" id="year">
+                <option value="ETC">อื่น ๆ </option>
+                <option value="2540">2540</option>
+                <option value="2539">2539</option>
+                <option value="2538">2538</option>
+                <option value="2537">2537</option>
+                <option value="2536">2536</option>
+                <option value="2535">2535</option>
+                <option value="2534">2534</option>
+                <option value="2533">2533</option>
+                <option value="2532">2532</option>
+                <option value="2531">2531</option>
+                <option value="2530" selected="selected">2530</option>
+              </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="age"> อายุ : </label>
+            <input type="number" name="age"> ปี
+            <br><dd><label for="nation"> เชื่อชาติ : </label>
+            <input type="text" name="nation"/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="national">สัญชาติ : </label>
+            <input type="text" name="national"/></dd></small><p>
+          </fieldset>
+          <p><fieldset><legend> 2. สถานที่ติดต่อได้สะดวก </legend></p>
+            <small><br><dd><label for="house" > บ้านเลขที่ : </label><input type="text" name="house" size="3"/> &nbsp;&nbsp; <label for="village" > หมู่ : </label><input type="text" name="village" size="3"/>&nbsp;&nbsp; หมู่บ้าน&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;ตรอก/ซอย&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;ถนน&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;
+            <br><dd>ตำบล/แขวง&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;อำเภอ&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;จังหวัด&nbsp;&nbsp;<input type="text"/>
+            <br><dd>รหัสไปรษณีย์&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;โทรศัพท์&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;E-mail&nbsp;&nbsp;<input type="text"/></small>
+          <p></fieldset><p>
+          <fieldset><legend>3. วุฒิการศึกษา&nbsp;</legend></p>
+  <small><dd><u> ปริญญาตรี </u>&nbsp;&nbsp;&nbsp;&nbsp;วุฒิการศึกษา&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สาขาวิชา&nbsp;&nbsp;<input type="text"/><br />
+    <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; สถาบันการศึกษา&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp; สําเร็จ พ.ศ.&nbsp;&nbsp;<input type="text"/><br />
+  <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เกรดเฉลี่ย&nbsp;&nbsp;<input type="text"/><p>
+    <dd><u> ปริญญาโท </u>&nbsp;&nbsp;&nbsp;&nbsp;วุฒิการศึกษา&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สาขาวิชา&nbsp;&nbsp;<input type="text"/><br />
+      <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; สถาบันการศึกษา&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp; สําเร็จ พ.ศ.&nbsp;&nbsp;<input type="text"/><br />
+    <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เกรดเฉลี่ย&nbsp;&nbsp;<input type="text"/><p>
+      <dd><u> ปริญญาเอก </u>&nbsp;&nbsp;&nbsp;&nbsp;วุฒิการศึกษา&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สาขาวิชา&nbsp;&nbsp;<input type="text"/><br />
+        <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; สถาบันการศึกษา&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp; สําเร็จ พ.ศ.&nbsp;&nbsp;<input type="text"/><br />
+      <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เกรดเฉลี่ย&nbsp;&nbsp;<input type="text"/><p>
+        <dd><u> อื่น ๆ  </u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;วุฒิการศึกษา&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สาขาวิชา&nbsp;&nbsp;<input type="text"/><br />
+          <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; สถาบันการศึกษา&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp; สําเร็จ พ.ศ.&nbsp;&nbsp;<input type="text"/><br />
+        <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; เกรดเฉลี่ย&nbsp;&nbsp;<input type="text"/><p>
+  </fieldset></small>
+
+  <fieldset><legend>4. ประวัติการทํางาน เรียงตามลําดับครั้งสุดท้ายไปหาครั้งแรก</legend><p>
+  <small><dd><li><u>สถานที่ทำงานครั้งสุดท้าย</u>&nbsp;&nbsp;<textarea cols="90" rows="1"></textarea></li>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตําแหน่ง&nbsp;&nbsp;<input type="text"/></p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <label for="month">ตั้งแต่เดือน</label>
+    <select name="month" id="month">
+      <option value="DEC">ธันวาคม</option>
+      <option value="NOV">พฤศจิกายน</option>
+      <option value="OCT">ตุลาคม</option>
+      <option value="SEP">กันยายน</option>
+      <option value="AUG">สิงหาคม</option>
+      <option value="JUL">กรกฎาคม</option>
+      <option value="JUN">มิถุนายน</option>
+      <option value="MAY">พฤษภาคม</option>
+      <option value="APR">เมษายน</option>
+      <option value="MAR">มีนาคม</option>
+      <option value="FEB">กุมภาพันธ์</option>
+      <option value="JAN" selected="selected">มกราคม</option>
+    </select>
+    <label for="year">ปี</label>
+    <select name="year" id="year">
+      <option value="ETC">อื่น ๆ </option>
+      <option value="2560">2560</option>
+      <option value="2559">2559</option>
+      <option value="2558">2558</option>
+      <option value="2557">2557</option>
+      <option value="2556">2556</option>
+      <option value="2555">2555</option>
+      <option value="2554">2554</option>
+      <option value="2553">2553</option>
+      <option value="2552">2552</option>
+      <option value="2551">2551</option>
+      <option value="2550" selected="selected">2550</option>
+    </select>
+    <label for="month">ถึงเดือน</label>
+    <select name="month" id="month">
+      <option value="DEC">ธันวาคม</option>
+      <option value="NOV">พฤศจิกายน</option>
+      <option value="OCT">ตุลาคม</option>
+      <option value="SEP">กันยายน</option>
+      <option value="AUG">สิงหาคม</option>
+      <option value="JUL">กรกฎาคม</option>
+      <option value="JUN">มิถุนายน</option>
+      <option value="MAY">พฤษภาคม</option>
+      <option value="APR">เมษายน</option>
+      <option value="MAR">มีนาคม</option>
+      <option value="FEB">กุมภาพันธ์</option>
+      <option value="JAN" selected="selected">มกราคม</option>
+    </select>
+    <label for="year">ปี</label>
+    <select name="year" id="year">
+      <option value="ETC">อื่นๆ</option>
+      <option value="2560">2560</option>
+      <option value="2559">2559</option>
+      <option value="2558">2558</option>
+      <option value="2557">2557</option>
+      <option value="2556">2556</option>
+      <option value="2555">2555</option>
+      <option value="2554">2554</option>
+      <option value="2553">2553</option>
+      <option value="2552">2552</option>
+      <option value="2551">2551</option>
+      <option value="2550" selected="selected">2550</option>
+    </select>
+  &nbsp;&nbsp;เงินเดือน&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;บาท</p>
+  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สาเหตุออก&nbsp;&nbsp;<textarea cols="90" rows="1"></textarea>
+
+  &nbsp;<li><u>สถานที่ทำงาน</u>&nbsp;&nbsp;<textarea cols="90" rows="1"></textarea></li>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตําแหน่ง&nbsp;&nbsp;<input type="text"/></p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <label for="month">ตั้งแต่เดือน</label>
+      <select name="month" id="month">
+        <option value="DEC">ธันวาคม</option>
+        <option value="NOV">พฤศจิกายน</option>
+        <option value="OCT">ตุลาคม</option>
+        <option value="SEP">กันยายน</option>
+        <option value="AUG">สิงหาคม</option>
+        <option value="JUL">กรกฎาคม</option>
+        <option value="JUN">มิถุนายน</option>
+        <option value="MAY">พฤษภาคม</option>
+        <option value="APR">เมษายน</option>
+        <option value="MAR">มีนาคม</option>
+        <option value="FEB">กุมภาพันธ์</option>
+        <option value="JAN" selected="selected">มกราคม</option>
+      </select>
+      <label for="year">ปี</label>
+      <select name="year" id="year">
+        <option value="ETC">อื่น ๆ</option>
+        <option value="2560">2560</option>
+        <option value="2559">2559</option>
+        <option value="2558">2558</option>
+        <option value="2557">2557</option>
+        <option value="2556">2556</option>
+        <option value="2555">2555</option>
+        <option value="2554">2554</option>
+        <option value="2553">2553</option>
+        <option value="2552">2552</option>
+        <option value="2551">2551</option>
+        <option value="2550" selected="selected">2550</option>
+      </select>
+      <label for="month">ถึงเดือน</label>
+      <select name="month" id="month">
+        <option value="DEC">ธันวาคม</option>
+        <option value="NOV">พฤศจิกายน</option>
+        <option value="OCT">ตุลาคม</option>
+        <option value="SEP">กันยายน</option>
+        <option value="AUG">สิงหาคม</option>
+        <option value="JUL">กรกฎาคม</option>
+        <option value="JUN">มิถุนายน</option>
+        <option value="MAY">พฤษภาคม</option>
+        <option value="APR">เมษายน</option>
+        <option value="MAR">มีนาคม</option>
+        <option value="FEB">กุมภาพันธ์</option>
+        <option value="JAN" selected="selected">มกราคม</option>
+      </select>
+      <label for="year">ปี</label>
+      <select name="year" id="year">
+        <option value="ETC">อื่นๆ</option>
+        <option value="2560">2560</option>
+        <option value="2559">2559</option>
+        <option value="2558">2558</option>
+        <option value="2557">2557</option>
+        <option value="2556">2556</option>
+        <option value="2555">2555</option>
+        <option value="2554">2554</option>
+        <option value="2553">2553</option>
+        <option value="2552">2552</option>
+        <option value="2551">2551</option>
+        <option value="2550" selected="selected">2550</option>
+      </select>
+    &nbsp;&nbsp;เงินเดือน&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;บาท</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สาเหตุออก&nbsp;&nbsp;<textarea cols="90" rows="1"></textarea>
+
+      &nbsp;<li><u>สถานที่ทำงาน</u>&nbsp;&nbsp;<textarea cols="90" rows="1"></textarea></li>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ตําแหน่ง&nbsp;&nbsp;<input type="text"/></p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label for="month">ตั้งแต่เดือน</label>
+          <select name="month" id="month">
+            <option value="DEC">ธันวาคม</option>
+            <option value="NOV">พฤศจิกายน</option>
+            <option value="OCT">ตุลาคม</option>
+            <option value="SEP">กันยายน</option>
+            <option value="AUG">สิงหาคม</option>
+            <option value="JUL">กรกฎาคม</option>
+            <option value="JUN">มิถุนายน</option>
+            <option value="MAY">พฤษภาคม</option>
+            <option value="APR">เมษายน</option>
+            <option value="MAR">มีนาคม</option>
+            <option value="FEB">กุมภาพันธ์</option>
+            <option value="JAN" selected="selected">มกราคม</option>
+          </select>
+          <label for="year">ปี</label>
+          <select name="year" id="year">
+            <option value="ETC">อื่นๆ</option>
+            <option value="2560">2560</option>
+            <option value="2559">2559</option>
+            <option value="2558">2558</option>
+            <option value="2557">2557</option>
+            <option value="2556">2556</option>
+            <option value="2555">2555</option>
+            <option value="2554">2554</option>
+            <option value="2553">2553</option>
+            <option value="2552">2552</option>
+            <option value="2551">2551</option>
+            <option value="2550" selected="selected">2550</option>
+          </select>
+          <label for="month">ถึงเดือน</label>
+          <select name="month" id="month">
+            <option value="DEC">ธันวาคม</option>
+            <option value="NOV">พฤศจิกายน</option>
+            <option value="OCT">ตุลาคม</option>
+            <option value="SEP">กันยายน</option>
+            <option value="AUG">สิงหาคม</option>
+            <option value="JUL">กรกฎาคม</option>
+            <option value="JUN">มิถุนายน</option>
+            <option value="MAY">พฤษภาคม</option>
+            <option value="APR">เมษายน</option>
+            <option value="MAR">มีนาคม</option>
+            <option value="FEB">กุมภาพันธ์</option>
+            <option value="JAN" selected="selected">มกราคม</option>
+          </select>
+          <label for="year">ปี</label>
+          <select name="year" id="year">
+            <option value="ETC">อื่น ๆ</option>
+            <option value="2560">2560</option>
+            <option value="2559">2559</option>
+            <option value="2558">2558</option>
+            <option value="2557">2557</option>
+            <option value="2556">2556</option>
+            <option value="2555">2555</option>
+            <option value="2554">2554</option>
+            <option value="2553">2553</option>
+            <option value="2552">2552</option>
+            <option value="2551">2551</option>
+            <option value="2550" selected="selected">2550</option>
+          </select>
+        &nbsp;&nbsp;เงินเดือน&nbsp;&nbsp;<input type="text"/>&nbsp;&nbsp;บาท</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สาเหตุออก&nbsp;&nbsp;<textarea cols="90" rows="1"></textarea>
+  </fieldset></small>
+
+  <fieldset><legend>5. ภาษา</legend>
+    <p><dd><small>ภาษาอังกฤษ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      พูด&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="point"
+      value="ดีมาก" />ดีมาก&nbsp;&nbsp;
+      <input type="radio" name="point"
+      value="ดี" />ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="point"
+      value="พอใช้" />พอใช้</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
+      อ่าน&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="point1"
+      value="ดีมาก" />ดีมาก&nbsp;&nbsp;
+      <input type="radio" name="point1"
+      value="ดี" />ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="point1"
+      value="พอใช้" />พอใช้</p>
+    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;
+      เขียน&nbsp;
+      <input type="radio" name="point2"
+      value="ดีมาก" />ดีมาก&nbsp;&nbsp;
+      <input type="radio" name="point2"
+      value="ดี" />ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio" name="point2"
+      value="พอใช้" />พอใช้</p>
+
+      <p><dd>ภาษาอื่นๆ ระบุ&nbsp;&nbsp;<input type="text"/><br />
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;
+        พูด&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="point3"
+        value="ดีมาก" />ดีมาก&nbsp;&nbsp;
+        <input type="radio" name="point3"
+        value="ดี" />ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="point3"
+        value="พอใช้" />พอใช้</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;
+        อ่าน&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="point4"
+        value="ดีมาก" />ดีมาก&nbsp;&nbsp;
+        <input type="radio" name="point4"
+        value="ดี" />ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="point4"
+        value="พอใช้" />พอใช้</p>
+      <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      &nbsp;&nbsp;
+        เขียน&nbsp;
+        <input type="radio" name="point5"
+        value="ดีมาก" />ดีมาก&nbsp;&nbsp;
+        <input type="radio" name="point5"
+        value="ดี" />ดี&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="radio" name="point5"
+        value="พอใช้" />พอใช้</p>
+    </fieldset></small>
+
+    <fieldset><legend>&nbsp;6. ความรู้ทางคอมพิวเตอร์ ระบุ&nbsp;</legend>
+<form method="post" action="form.aspx">
+<textarea cols="80" rows="5"
+id="Remarks"></textarea>
+</form></p></fieldset>
+
+<fieldset><legend>&nbsp;7.ผลงานทางวิชาการ ระบุ&nbsp;</legend>
+<form method="post" action="form.aspx">
+<textarea cols="80" rows="5"
+id="Remarks"></textarea>
+</form></p></fieldset>
+
+<fieldset><legend>&nbsp;8. ประสบการณ์พิเศษอื่น ๆ ระบุุ&nbsp;</legend>
+<form method="post" action="form.aspx">
+<textarea cols="80" rows="5"
+id="Remarks"></textarea>
+</form></p></fieldset><br /><br />
+
+<p align = 'right'>ลงชื่อ ........................................... ผู้สมัคร </p>
+<p align = 'right'>(....................................................................)</p>
+<p align = 'right'>....................../........................../....................</p>
+<br />
+
+<p>* <u>หมายเหตุ</u> *<small>กรอกข้อมูลให้ได้รายละเอียดมากที่สุด เพื่อประโยชน์ของท่านเองและสามารถแนบประวัติและเอกสารอื่น ๆ
+ เพื่อใช้เป็นข้อมูลในการพิจารณาตัวท่านเพิ่มเติมพร้อมกับใบสมัครได้ </small></p>
+ <p><center><input name="btnSubmit" type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</center>
+
+        </form>
+      </font>
+    </font>
   </body>
 </html>
